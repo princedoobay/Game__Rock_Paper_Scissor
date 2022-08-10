@@ -1,5 +1,4 @@
 import random
-import git
 
 def gameRPS(comp, you):
     # If two values are equal. Declare a tie!
@@ -24,7 +23,7 @@ def gameRPS(comp, you):
         elif you == 'paper':
             return False
 
-print("computer turn: rock(r), paper(p) or scissor(s)")
+print("computer turn: rock, paper or scissor")
 x = random.randint(1,3)
 if x == 1:
     comp = "rock"
@@ -33,7 +32,7 @@ elif x == 2:
 elif x == 3:
     comp = "scissor"
 
-you = input("your turn: Choose rock(r), paper(p) and scissor(s):\t")
+you = input("your turn: Choose rock, paper and scissor:\t")
 
 y = gameRPS(comp, you)
 
