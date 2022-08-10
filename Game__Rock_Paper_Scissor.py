@@ -32,7 +32,7 @@ elif x == 2:
 elif x == 3:
     comp = "scissor"
 
-you = input("your turn: Choose rock, paper and scissor:\t")
+you = input("your turn: Choose rock, paper and scissor:\t").lower()
 
 y = gameRPS(comp, you)
 
